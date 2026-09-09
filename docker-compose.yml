@@ -1,0 +1,9 @@
+﻿services:
+  mapa-puestos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mapa-puestos-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
